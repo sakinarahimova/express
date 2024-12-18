@@ -1,12 +1,12 @@
 {
   "homepage": "https://sakinarahimova.github.io/express",
-  
   "name": "expressnew",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
@@ -16,5 +16,8 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
